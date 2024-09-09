@@ -20,6 +20,9 @@ function Page() {
       [name]: type === 'checkbox' ? checked : value,
     });
   };
+
+  const [showPassword, setShowPassword] = useState(false);
+
   return (    
     <div className="flex h-screen overflow-hidden">
     <Part/>
@@ -81,16 +84,22 @@ function Page() {
               <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                 Create password*
               </label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                value={form.password}
-                onChange={handleChange}
-                className="mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full"
-                placeholder="Enter password"
-                required
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  name="password"
+                  id="password"
+                  className="mt-1 px-3 py-2 pr-16 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-full"
+                  placeholder="Enter password"
+                  required
+                />
+                <span
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute inset-y-0 right-3 flex items-center text-sm leading-5 cursor-pointer text-gray-500 hover:text-gray-700"
+                >
+                  {showPassword ? 'Hide' : 'Show'}
+                </span>
+              </div>
             </div>
 
             <div className="flex items-center mb-6">
