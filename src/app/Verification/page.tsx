@@ -24,7 +24,7 @@ function Page() {
     <div className="flex h-screen overflow-hidden">
     <Part/>
       <div className="w-full lg:w-[60%] p-[40px] flex flex-col justify-center items-center relative">
-        <div className='w-1/2 flex'>
+        <div className='w-full lg:w-1/2 flex'>
           <div className='absolute top-5 left-5 flex'>
             <Link href="/RecidentInfo">
               <button className='flex space-x-1 hover:text-[#8692A6]'>

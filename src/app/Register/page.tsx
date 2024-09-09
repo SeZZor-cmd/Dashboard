@@ -24,7 +24,7 @@ function Page() {
     <div className="flex h-screen overflow-hidden">
     <Part/>
       <div className="w-full lg:w-[60%] p-[40px] flex flex-col justify-center items-center relative">
-        <div className='w-1/2 flex'>
+        <div className='w-full lg:w-1/2 flex'>
           <div className='absolute top-5 left-5 flex'>
             <Link href="/">
               <button className='flex space-x-1 hover:text-[#8692A6]'>
@@ -40,8 +40,8 @@ function Page() {
             </p>
           </div>
           <form >
-            <h1 className="text-[16px] lg:text-[30px] font-bold mb-3">Register Individual Account!</h1>
-            <p className="text-[12px] text-[#8692A6] lg:text-[18px] font-normal mb-6">
+            <h1 className="text-[30px] font-bold mb-3">Register Individual Account!</h1>
+            <p className="text-[#8692A6] text-[18px] font-normal mb-6">
               For the purpose of industry regulation, your details are required.
             </p>
 
