@@ -73,7 +73,7 @@ function JoinUs() {
         <div>
           <h1 className="text-3xl font-bold text-[30px] mb-2">Join Us!</h1>
           <p className="text-lg font-normal text-[#8692A6]">
-            To begin the journey, tell us what type of account you'd be opening.
+            To begin the journey, tell us what type of account you&apos;d be opening.
           </p>
         </div>
 
