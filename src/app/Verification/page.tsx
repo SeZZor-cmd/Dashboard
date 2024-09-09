@@ -5,7 +5,7 @@ import Part from "../components/Part"
 import Link from 'next/link';
 import Image from 'next/image';
 
-function page() {
+function Page() {
   const [form, setForm] = useState({
     fullName: '',
     email: '',
@@ -82,4 +82,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

@@ -7,7 +7,7 @@ import Image from 'next/image';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
-function page() {
+function Page() {
   
   const [form, setForm] = useState({
     phone: '',
@@ -150,4 +150,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

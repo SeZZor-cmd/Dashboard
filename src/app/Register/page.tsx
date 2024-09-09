@@ -5,7 +5,7 @@ import Part from "../components/Part"
 import Link from 'next/link';
 import Image from 'next/image';
 
-function page() {
+function Page() {
   const [form, setForm] = useState({
     fullName: '',
     email: '',
@@ -39,7 +39,7 @@ function page() {
               <span className='text-[#8692A6] text-[16px] font-semibold'>Personal Info.</span>
             </p>
           </div>
-          <form className='w-auto'>
+          <form >
             <h1 className="text-[16px] lg:text-[30px] font-bold mb-3">Register Individual Account!</h1>
             <p className="text-[12px] text-[#8692A6] lg:text-[18px] font-normal mb-6">
               For the purpose of industry regulation, your details are required.
@@ -134,4 +134,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
